@@ -1,0 +1,94 @@
+{
+  "name": "inserttemplates",
+  "displayName": "InsertTemplates",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.InsertForTemplate",
+        "title": "Insert For Template"
+      },
+      {
+        "command": "extension.InsertWhileTemplate",
+        "title": "Insert While Template"
+      },
+      {
+        "command": "extension.InsertDoWhileTemplate",
+        "title": "Insert Do-While Template"
+      },
+      {
+        "command": "extension.InsertArrayInputTemplate",
+        "title": "Insert Array-Input Template"
+      },
+      {
+        "command": "extension.InsertArrayOutputTemplate",
+        "title": "Insert Array-Output Template"
+      },
+      {
+        "command": "extension.InsertEmptyProjectTemplate",
+        "title": "Insert Empty Project Template"
+      }
+
+    ],
+    "keybindings": [
+      {
+        "command": "extension.InsertForTemplate",
+        "key": "ctrl+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.InsertWhileTemplate",
+        "key": "ctrl+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.InsertDoWhileTemplate",
+        "key": "ctrl+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.InsertArrayInputTemplate",
+        "key": "ctrl+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.InsertArrayOutputTemplate",
+        "key": "ctrl+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.InsertEmptyProjectTemplate",
+        "key": "ctrl+6",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
