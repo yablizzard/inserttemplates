@@ -14,60 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.InsertForTemplate",
-        "title": "Insert For Template"
-      },
-      {
-        "command": "extension.InsertWhileTemplate",
-        "title": "Insert While Template"
-      },
-      {
-        "command": "extension.InsertDoWhileTemplate",
-        "title": "Insert Do-While Template"
-      },
-      {
-        "command": "extension.InsertArrayInputTemplate",
-        "title": "Insert Array-Input Template"
-      },
-      {
-        "command": "extension.InsertArrayOutputTemplate",
-        "title": "Insert Array-Output Template"
-      },
-      {
-        "command": "extension.InsertEmptyProjectTemplate",
-        "title": "Insert Empty Project Template"
+        "command": "extension.InsertText0",
+        "title": "Insert Text 0"
       }
-
     ],
     "keybindings": [
       {
-        "command": "extension.InsertForTemplate",
-        "key": "ctrl+1",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "extension.InsertWhileTemplate",
-        "key": "ctrl+2",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "extension.InsertDoWhileTemplate",
-        "key": "ctrl+3",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "extension.InsertArrayInputTemplate",
-        "key": "ctrl+4",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "extension.InsertArrayOutputTemplate",
-        "key": "ctrl+5",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "extension.InsertEmptyProjectTemplate",
-        "key": "ctrl+6",
+        "command": "extension.InsertText0",
+        "key": "ctrl+0",
         "when": "editorTextFocus"
       }
     ]
